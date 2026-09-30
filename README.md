@@ -1,9 +1,5 @@
 # Documento Técnico: Network QoS Monitor
 
-Aplicación móvil multiplataforma desarrollada con **React Native (Expo SDK 57)** y **TypeScript** para medir, almacenar y visualizar la calidad de la conexión de red, cumpliendo estrictamente con los requisitos del TP de Desarrollo de Aplicaciones Móviles 2026.
-
----
-
 ## 1. Arquitectura
 
 El sistema se compone de dos grandes capas (Cliente Móvil y Servidor de Pruebas), diseñadas bajo un enfoque modular y reactivo:
