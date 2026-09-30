@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Network QoS Monitor",
+    "slug": "network-qos-monitor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.network.qos.monitor",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ],
+        "NSLocationWhenInUseUsageDescription": "La ubicación se utiliza para mapear las métricas de red a una ubicación física.",
+        "NSLocationAlwaysUsageDescription": "La ubicación en segundo plano permite registrar métricas asociadas a tu ubicación.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "La ubicación se usa para recolectar mediciones de red de forma periódica."
+      }
+    },
+    "android": {
+      "package": "com.network.qos.monitor",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_WIFI_STATE",
+        "FOREGROUND_SERVICE",
+        "WAKE_LOCK"
+      ]
+    },
+    "web": {},
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
+      "expo-sharing",
+      "expo-sqlite",
+      "expo-status-bar"
+    ],
+    "scheme": "networkqosmonitor",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
